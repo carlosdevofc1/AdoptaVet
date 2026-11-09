@@ -1,0 +1,137 @@
+:root {
+    --bg-color: #e3ebe4; 
+    --shadow-light: #ffffff;
+    --shadow-dark: #c1ccc3;
+    --primary-green: #327a38;
+    --primary-green-dark: #225726;
+    --text-main: #2b3d2d;
+    --text-muted: #5e7361;
+    --danger: #d9534f;
+    --warning: #e09e3e;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-main);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-green-dark) !important;
+    font-weight: 700;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.navbar {
+    background-color: var(--bg-color) !important;
+    border: none;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light) !important;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.navbar-brand {
+    color: var(--primary-green-dark) !important;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--text-main) !important;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-green) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-green) !important;
+    box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);
+}
+
+.card, search.card {
+    background-color: var(--bg-color) !important;
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light) !important;
+    overflow: hidden;
+}
+
+.card-header, .card-footer {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.btn {
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-secondary, .btn-outline-secondary {
+    background-color: var(--bg-color) !important;
+    color: var(--text-main) !important;
+    box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light) !important;
+}
+
+.btn-success, .btn-primary, .btn-outline-primary {
+    background-color: var(--primary-green) !important;
+    color: white !important;
+    box-shadow: 5px 5px 10px rgba(34, 87, 38, 0.4), -5px -5px 10px var(--shadow-light) !important;
+}
+
+.btn-danger {
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(217, 83, 79, 0.3), -5px -5px 10px var(--shadow-light) !important;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-secondary:active, .btn-outline-secondary:active {
+    box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light) !important;
+}
+
+.btn-success:active, .btn-primary:active, .btn-outline-primary:active {
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.3), inset -4px -4px 8px rgba(255,255,255,0.2) !important;
+}
+
+.form-control, .form-select, textarea {
+    background-color: var(--bg-color) !important;
+    border: 2px solid transparent !important;
+    border-radius: 12px !important;
+    box-shadow: inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light) !important;
+    color: var(--text-main) !important;
+    padding: 0.8rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus, textarea:focus {
+    box-shadow: inset 6px 6px 12px var(--shadow-dark), inset -6px -6px 12px var(--shadow-light) !important;
+    border: 2px solid rgba(50, 122, 56, 0.4) !important;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #8fa392 !important;
+}
+
+.badge.bg-success, .badge.bg-primary {
+    background-color: var(--primary-green) !important;
+    box-shadow: 3px 3px 6px var(--shadow-dark), -3px -3px 6px var(--shadow-light);
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
