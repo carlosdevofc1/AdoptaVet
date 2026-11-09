@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptaVet - Detalhes do Animal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/detalhes.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="container" aria-label="Navegação Principal">
+            <a class="navbar-brand" href="index.html">AdoptaVet</a>
+            <ul class="navbar-nav ms-auto flex-row gap-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="form-animal.html">Cadastrar Animal</a></li>
+                <li class="nav-item"><a class="nav-link" href="relatorios.html">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <nav aria-label="Navegação de retorno" class="mb-4">
+            <a href="index.html" class="btn btn-outline-secondary">&larr; Voltar para a Lista</a>
+        </nav>
+
+        <article class="card shadow-sm border-0">
+            <div class="row g-0">
+                <figure class="col-md-5 m-0">
+                    <img src="https://via.placeholder.com/500x500" class="img-fluid rounded-start h-100 object-fit-cover" id="detalheFoto" alt="Foto do Animal">
+                    <figcaption class="visually-hidden">Fotografia do resgate</figcaption>
+                </figure>
+                
+                <section class="col-md-7 card-body py-5 px-4">
+                    <header class="d-flex justify-content-between align-items-center mb-3">
+                        <h1 class="card-title mb-0 h3" id="detalheNome">Rex</h1>
+                        <span class="badge bg-success fs-6" id="detalheStatus">Disponível</span>
+                    </header>
+                    
+                    <ul class="list-group list-group-flush mb-4" aria-label="Detalhes técnicos do animal">
+                        <li class="list-group-item"><strong>Espécie:</strong> <span id="detalheEspecie">Cachorro</span></li>
+                        <li class="list-group-item"><strong>Raça:</strong> <span id="detalheRaca">SRD</span></li>
+                        <li class="list-group-item"><strong>Idade Estimada:</strong> <span id="detalheIdade">3 anos</span></li>
+                        <li class="list-group-item"><strong>Data de Resgate:</strong> <span id="detalheData">12/10/2026</span></li>
+                    </ul>
+
+                    <section aria-labelledby="tituloHistorico">
+                        <h2 class="h5" id="tituloHistorico">Histórico e Condição Médica</h2>
+                        <p class="card-text text-muted" id="detalheCondicao">Vacinado, castrado e em boa saúde geral. Foi resgatado nas ruas do bairro após uma tempestade.</p>
+                    </section>
+
+                    <footer class="mt-4 pt-3 border-top">
+                        <button id="btnEditar" class="btn btn-primary me-2">Editar Cadastro</button>
+                        <button id="btnExcluir" class="btn btn-danger">Excluir Registro</button>
+                    </footer>
+                </section>
+            </div>
+        </article>
+    </main>
+    <script src="../assets/js/database.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
