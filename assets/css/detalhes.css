@@ -1,0 +1,15 @@
+#detalheFoto {
+    padding: 15px;
+    background-color: var(--bg-color);
+    box-shadow: inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light);
+    border-radius: 20px !important;
+    margin: 20px;
+    width: calc(100% - 40px);
+}
+
+.list-group-item {
+    background-color: transparent !important;
+    border-color: var(--shadow-dark) !important;
+    color: var(--text-main);
+    padding: 1rem 0;
+}

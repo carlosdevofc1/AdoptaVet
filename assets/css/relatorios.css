@@ -1,0 +1,15 @@
+.text-bg-primary, .text-bg-success, .text-bg-warning {
+    background-color: var(--bg-color) !important;
+    color: var(--text-main) !important;
+}
+
+.text-bg-primary h2, .text-bg-primary p { color: var(--primary-green) !important; }
+.text-bg-success h2, .text-bg-success p { color: var(--primary-green-dark) !important; }
+.text-bg-warning h2, .text-bg-warning p { color: var(--warning) !important; }
+
+.list-group-item {
+    background-color: transparent !important;
+    border-color: var(--shadow-dark) !important;
+    color: var(--text-main);
+    padding: 1rem 0;
+}
