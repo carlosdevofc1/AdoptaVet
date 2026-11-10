@@ -1,8 +1,8 @@
 #  AdoptaVet - Sistema de Gestão de Resgates e Adoção
 
-**Disciplina:** [Insira o nome da disciplina aqui]  
+**Disciplina:** Desenvolvimento de Interfaces Web
 **Projeto:** Trabalho Prático Individual Evolutivo - Etapa 3  
-**Autor:** [Seu Nome / Carlos Fernando Vieira da Cruz]  
+**Autor:**  Carlos Fernando Vieira da Cruz
 
 ---
 
